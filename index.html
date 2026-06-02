@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+    z-index:100;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+.social-icons a{
+    color:#38bdf8;
+    font-size:28px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:white;
+    transform:scale(1.2);
+}
+
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:50px 8%;
+    gap:80px;
+}
+
+.hero-image img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,.4);
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero-content h1 span{
+    color:#38bdf8;
+}
+
+.hero-content h3{
+    font-size:28px;
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:600px;
+    color:#94a3b8;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#0f172a;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+}
+
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+    color:#38bdf8;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    justify-content:center;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px 20px;
+    border-radius:25px;
+}
+
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#cbd5e1;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">My Portfolio</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+    </ul>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/johnandrewherrzon.romano.92" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-image">
+        <!-- Replace with your image -->
+        <img src="Andrew.jpeg" alt="Profile Picture">
+    </div>
+
+    <div class="hero-content">
+        <h1>Hello, I'm <span>John Andrew Herrzon Romano</span></h1>
+
+        <h3>4th Year Student</h3>
+
+
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            I am an active member of TechCom, where I assist in organizing and managing school and community events, including town pageants and special programs. My involvement has helped me develop strong teamwork, communication, leadership, and event coordination skills.
+        </p>
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills">
+    <div class="skill">Event Management</div>
+    <div class="skill">Project Coordination</div>
+    <div class="skill">Leadership</div>
+    <div class="skill">Team Collaboration</div>
+    <div class="skill">Communication Skills</div>
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Time Management</div>
+    <div class="skill">Organization & Planning</div>
+    </div>
+</section>
+
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>School Foundation Day Program</h3>
+            <p>
+                Provided technical and logistical support during the school's Foundation Day celebration, ensuring smooth execution of presentations, audio systems, and event activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Town Pageant Support Team</h3>
+            <p>
+                Participated in the coordination and management of town pageants, assisting with stage preparation, contestant coordination, program flow, and technical requirements.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Student Leadership and Community Engagement</h3>
+            <p>
+                Collaborated with fellow students in organizing school and community events, developing skills in leadership, communication, teamwork, and event coordination.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>STI college Tanay</p>
+    </div>
+</section>
+
+
+<footer>
+    <h2>Contact Information</h2>
+
+    <p>Email: romanojohnandrewherrzon@gmail.com</p>
+    <p>Phone: +63 9090909090</p>
+    <p>Location: STI Tanay</p>
+    <p>GitHub: github.com/yourusername</p>
+</footer>
+
+</body>
+</html>
