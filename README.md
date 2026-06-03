@@ -21,6 +21,6 @@ Technologies Used: HTML5, CSS3, JavaScript, Responsive Web Design, CSS Flexbox, 
 ![Contact Information](Project&Contactinformation.png)
 
 
-[https://github.com/ROMANO0004/Portfolio](https://github.com/ROMANO0004?tab=repositories)
+https://github.com/ROMANO0004/Portfolio
 
 https://romano0004.github.io/Portfolio/
