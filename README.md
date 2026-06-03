@@ -3,6 +3,8 @@ TASK PERFORMANCE
 
 # My Portfolio
 
+Technologies Used: HTML5, CSS3, JavaScript, Responsive Web Design, CSS Flexbox, CSS Grid, Font Awesome, Google Fonts, Git, and GitHub.
+
 ## Home
 ![Home](Home.png)
 
